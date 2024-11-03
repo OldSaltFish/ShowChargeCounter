@@ -43,8 +43,8 @@ RedMi K40在电池老化后，会出现电量百分比卡在1%的情况，以上
 
 使用DevCheck或者给本应用悬浮窗权限后，就能够查看ChargeCounter。  
 
-![Screenshot_2024-11-03-15-20-18-728_flar2.devcheck](img/Screenshot_2024-11-03-15-20-18-728_flar2.devcheck.jpg)
+<img src="img/Screenshot_2024-11-03-15-20-18-728_flar2.devcheck.jpg" alt="Screenshot_2024-11-03-15-20-18-728_flar2.devcheck" height="800px" />
 
 
 
-![Screenshot_20241103-154518_ShowChargeCounter](img/Screenshot_20241103-154518_ShowChargeCounter.png)
+<img src="img/Screenshot_20241103-154518_ShowChargeCounter.png" alt="Screenshot_20241103-154518_ShowChargeCounter" height="800px"/>
