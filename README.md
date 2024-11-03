@@ -14,6 +14,12 @@
 
 RedMi K40在电池老化后，会出现电量百分比卡在1%的情况，以上的情况我全都遇到过。电量会乱跳，40%的电可能就会关机，我经常在排队时突然手机黑屏。  
 
+## 下载
+
+https://atomgit.com/dreamsoul/ShowChargeCounter/tags?tab=release  
+
+> 如果你不知道下载什么版本，可以选择带有`arm64-v8a`字样的版本，如果是上古神机，则选择armeabi-v7a（32位架构）
+
 ## 使用方法
 
 使用之前我们有必要说一下ChargeCounter这个参数，正如其名，他叫做`充电计数器`。你不需要对它进行过多的了解，只需要知道：  
@@ -43,8 +49,8 @@ RedMi K40在电池老化后，会出现电量百分比卡在1%的情况，以上
 
 使用DevCheck或者给本应用悬浮窗权限后，就能够查看ChargeCounter。  
 
-<img src="img/Screenshot_2024-11-03-15-20-18-728_flar2.devcheck.jpg" alt="Screenshot_2024-11-03-15-20-18-728_flar2.devcheck" height="800px" />
+<img src="./img/Screenshot_2024-11-03-15-20-18-728_flar2.devcheck.jpg" alt="Screenshot_2024-11-03-15-20-18-728_flar2.devcheck" height="800px" />
 
 
 
-<img src="img/Screenshot_20241103-154518_ShowChargeCounter.png" alt="Screenshot_20241103-154518_ShowChargeCounter" height="800px"/>
+<img src="./img/Screenshot_20241103-154518_ShowChargeCounter.png" alt="Screenshot_20241103-154518_ShowChargeCounter" height="800px"/>
