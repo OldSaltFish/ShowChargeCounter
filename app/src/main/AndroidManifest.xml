@@ -25,12 +25,6 @@
             </intent-filter>
 
         </activity>
-
-        <activity
-            android:name=".FloatingWindowActivity"
-            android:theme="@style/TransparentTheme"
-            android:exported="false">
-        </activity>
         <service
             android:name=".FloatingTextService"
             android:enabled="true"
