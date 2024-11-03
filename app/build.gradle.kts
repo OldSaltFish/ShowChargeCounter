@@ -8,13 +8,44 @@ plugins {
 android {
     namespace = "cn.dreamsoul.showchargecounter"
     compileSdk = 34
+//按abi拆分包
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            include("armeabi-v7a", "arm64-v8a", "x86", "x86_64")//支持的ABIs
+            isUniversalApk = true //要不要一个全量ABIs的包
+        }
+    }
 
+    val abiCodes = mapOf("armeabi-v7a" to 1, "arm64-v8a" to 2, "x86" to 3, "x86_64" to 4)
+    android.applicationVariants.all {
+        // 构建类型，一般是release或者debug
+        val buildType = this.buildType.name
+        val variant = this
+        outputs.all {
+            val name =
+                this.filters.find { it.filterType == com.android.build.api.variant.FilterConfiguration.FilterType.ABI.name }?.identifier
+                    ?: "universal"
+            val baseAbiCode = abiCodes[name]
+            if (baseAbiCode != null) {
+                //写入cpu架构信息
+                variant.buildConfigField("String", "CPU_ABI", "\"${name}\"")
+            }
+            if (this is com.android.build.gradle.internal.api.ApkVariantOutputImpl) {
+                //修改apk名称
+                this.outputFileName =
+                    "${rootProject.name}_v${variant.versionName}_${buildType}_${name}.apk"
+
+            }
+        }
+    }
     defaultConfig {
         applicationId = "cn.dreamsoul.showchargecounter"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
-        versionName = "1.0"
+        versionName = "1.0.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -24,7 +55,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -37,7 +68,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlin{
+    kotlin {
         jvmToolchain(17)
     }
     kotlinOptions {
