@@ -49,8 +49,8 @@ https://atomgit.com/dreamsoul/ShowChargeCounter/tags?tab=release
 
 使用DevCheck或者给本应用悬浮窗权限后，就能够查看ChargeCounter。  
 
-<img src="./img/Screenshot_2024-11-03-15-20-18-728_flar2.devcheck.jpg" alt="Screenshot_2024-11-03-15-20-18-728_flar2.devcheck" height="800px" />
+<img src="https://s21.ax1x.com/2024/11/03/pArYGqg.jpg" height="800px" />
 
 
 
-<img src="./img/Screenshot_20241103-154518_ShowChargeCounter.png" alt="Screenshot_20241103-154518_ShowChargeCounter" height="800px"/>
+<img src="https://s21.ax1x.com/2024/11/03/pArY8sS.png" alt="Screenshot_20241103-154518_ShowChargeCounter" height="800px"/>
