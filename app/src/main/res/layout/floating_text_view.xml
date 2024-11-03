@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floatingTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="20dp"
+    android:background="#4CAF50"
+    android:elevation="10dp"
+    android:gravity="center"
+    android:textColor="#000000"
+    android:textSize="12sp" />
