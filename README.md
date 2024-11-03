@@ -54,3 +54,18 @@ https://atomgit.com/dreamsoul/ShowChargeCounter/tags?tab=release
 
 
 <img src="https://s21.ax1x.com/2024/11/03/pArY8sS.png" alt="Screenshot_20241103-154518_ShowChargeCounter" height="800px"/>
+
+
+
+## 注意
+
+### 作用
+
+这个软件的作用是： 在系统UI电量显示有故障时，近似地显示你的电量。如果你的手机电池很健康，而且没有电量百分比的强迫症，那么你很可能用不上这个软件。  
+
+
+
+### 渣代码
+
+作者并没有好好地去学安卓开发，因此这不是一个合格的可以进行学习的项目。  
+

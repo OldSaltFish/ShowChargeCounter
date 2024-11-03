@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                                 fontSize = 24.sp
                             )
                             IconButton(onClick = {
-                                val url = "https://gitee.com/oldsaltfish/jetpack-compose-study"
+                                val url = "https://atomgit.com/dreamsoul/ShowChargeCounter"
                                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
 //                                if(intent.resolveActivity(packageManager) != null){
                                 startActivity(intent)
